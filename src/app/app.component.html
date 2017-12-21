@@ -8,6 +8,12 @@
   <app-meu-primeiro2></app-meu-primeiro2>
   <app-cursos></app-cursos>
   <app-data-biding></app-data-biding>
+
+  <!-- AULA 15: CICLO DE VIDA DOS COMPONENTES -->
+  <app-ciclo [valorInicial] ="valor" *ngIf="!deletarCiclo"></app-ciclo>
+  <button class="btn btn-primary" (click)="mudarValor()">Mudar Valor</button>
+  <button class="btn btn-primary" (click)="destruirCiclo()">Deletar</button>
+  <br>
 </div>
 
 

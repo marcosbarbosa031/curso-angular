@@ -9,6 +9,8 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBidingComponent } from './data-biding/data-biding.component';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
     DataBidingComponent,
-    InputPropertiesComponent
+    InputPropertiesComponent,
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,7 @@ export class DataBidingComponent implements OnInit {
   isMouseOver: boolean = false;
   nome: String = '';
   nomeDoCurso: String = 'Angular';
+  valorInicial: number = 15;
 
   pessoa: any = {
     nome: 'Marcos',
@@ -48,6 +49,10 @@ export class DataBidingComponent implements OnInit {
 
   getCurtirCurso(){
     return true;
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
   }
 
   constructor() { }
