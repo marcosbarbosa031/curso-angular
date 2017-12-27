@@ -1,7 +1,7 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'meu-primeiro-component',
+    selector: 'app-meu-primeiro-component',
     template: `<p> Funcionou</p>`
 })
 export class MeuPrimeiroComponent {

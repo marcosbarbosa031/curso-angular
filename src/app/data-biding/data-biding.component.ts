@@ -7,51 +7,51 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBidingComponent implements OnInit {
 
-  url: String = "http://google.com.br";
-  urlImage: String = "https://loremflickr.com/320/240/dog";
-  cursoAngular: boolean = true;
-  d: boolean = false;
-  s: boolean = false;
-  input: String = "";
-  inputSalvo: String = "";
-  isMouseOver: boolean = false;
+  url: String = 'http://google.com.br';
+  urlImage: String = 'https://loremflickr.com/320/240/dog';
+  cursoAngular = true;
+  d = false;
+  s = false;
+  input: String = '';
+  inputSalvo: String = '';
+  isMouseOver = false;
   nome: String = '';
   nomeDoCurso: String = 'Angular';
-  valorInicial: number = 15;
+  valorInicial = 15;
 
   pessoa: any = {
     nome: 'Marcos',
     idade: 23
-  }
+  };
 
-  
-  getValor(){
+  getValor() {
     return 1;
   }
 
-  doDisable(){
-    if(!this.d)
+  doDisable() {
+    if (!this.d) {
       this.s = !this.s;
+    }
     this.d = true;
   }
 
-  onKeyUp(evento: KeyboardEvent){
+  onKeyUp(evento: KeyboardEvent) {
     this.input = (<HTMLInputElement>evento.target).value;
   }
 
-  salvarValor(valor){
+  salvarValor(valor) {
     this.inputSalvo = valor;
   }
 
-  onMouseOverOut(){
+  onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
   }
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
   }
 
-  onMudouValor(evento){
+  onMudouValor(evento) {
     console.log(evento.novoValor);
   }
 

@@ -5,44 +5,44 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './ciclo.component.html',
   styleUrls: ['./ciclo.component.css']
 })
-export class CicloComponent implements OnInit {
-  @Input() valorInicial: number = 10;
+export class CicloComponent /*implements OnInit*/ {
+  @Input() valorInicial = 10;
 
   constructor() { }
 
-  ngOnInit() {
-    this.log("OnInit");
-  }
+  // ngOnInit() {
+  //   this.log('OnInit');
+  // }
 
-  ngOnChanges() {
-    this.log("OnChanges");
-  }
+  // ngOnChanges() {
+  //   this.log('OnChanges');
+  // }
 
-  ngDoCheck() {
-    this.log("DoCheck");
-  }
+  // ngDoCheck() {
+  //   this.log('DoCheck');
+  // }
 
-  ngAfterContentInit() {
-    this.log("AfterContentInit");
-  }
+  // ngAfterContentInit() {
+  //   this.log('AfterContentInit');
+  // }
 
-  ngAfterContentChecked() {
-    this.log("AfterContentChecked");
-  }
+  // ngAfterContentChecked() {
+  //   this.log('AfterContentChecked');
+  // }
 
-  ngAfterViewInit() {
-    this.log("AfterViewInit");
-  }
+  // ngAfterViewInit() {
+  //   this.log('AfterViewInit');
+  // }
 
-  ngAfterViewChecked() {
-    this.log("AftetViewChecked");
-  }
+  // ngAfterViewChecked() {
+  //   this.log('AftetViewChecked');
+  // }
 
-  ngOnDestroy() {
-    this.log("OnDestroy");
-  }
+  // ngOnDestroy() {
+  //   this.log('OnDestroy');
+  // }
 
-  private log(hook: string){
+  private log(hook: string) {
     console.log(hook);
   }
 

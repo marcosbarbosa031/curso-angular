@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InputPropertiesComponent implements OnInit {
 
-  @Input() nomeCurso: String = "";
+  @Input() nomeCurso: String = '';
 
   constructor() { }
 
